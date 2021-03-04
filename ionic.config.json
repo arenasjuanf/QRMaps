@@ -1,5 +1,7 @@
 {
   "name": "QRMaps",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

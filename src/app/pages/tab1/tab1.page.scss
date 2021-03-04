@@ -1,0 +1,13 @@
+ion-content::part(scroll){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ion-content{
+    ion-button{
+        width: fit-content;
+        margin: auto;
+        font-weight: bold;
+    } 
+}  
