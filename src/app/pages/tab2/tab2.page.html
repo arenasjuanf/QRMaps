@@ -1,11 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar mode="ios">
     <ion-title>
       History
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="share()">
+        <ion-icon slot="icon-only" name="send"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+  <ion-list>
+    <ion-item detail lines="full" *ngFor="let item of registros" (click)="abrir(item)">
+      <ion-icon [name]="item.icon" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h2>{{ item.text }}</h2>
+        <small>
+          {{ item.created | date:'medium' }}
+        </small>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
 </ion-content>

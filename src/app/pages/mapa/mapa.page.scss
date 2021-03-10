@@ -1,0 +1,15 @@
+#map{
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #f6f6f4;
+}
+
+ion-buttons{
+   position: absolute;
+   right: 0px;
+    ion-back-button{
+        margin: 5px !important;
+        --icon-font-size: 30px;
+    }    
+}
+
